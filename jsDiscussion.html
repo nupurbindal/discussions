@@ -17,19 +17,18 @@
 		4. If someone uses the keyboard shortcut to copy the words "University of Michigan" then add the words "Go Blue" to the final div.  Each occurence should be on a separate line.  Don't use paragraphs. 
 		*/
         document.body.style.background = "#668cff";
+        
         document.body.style.margin = "25px";
         
         document.getElementsByTagName("div")
         
         document.getElementsByTagName('h1')[0].innerHTML = "Nupur Bindal";
         
-        document.getElementById('URL').innerHTML = "file:///Users/nupurbindal/Documents/UMSI/SI 539/jsDiscussion.html";
+        document.getElementById('URL').innerHTML = document.URL;
+        
+        document.getElementById('items').innerHTML = document.querySelectorAll('li').length;
         
         document.getElementById('time').innerHTML = Date();
-        
-        var list_el = document.getElementsByTagName('ol').getElementsByTagName('li')
-        var list_len = list_el.length
-        document.getElementById('items').innerHTML = list_len;
         
 	}
 </script>
